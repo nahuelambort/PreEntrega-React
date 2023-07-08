@@ -1,0 +1,36 @@
+.navbar{
+    padding: 5px 0;
+    position: relative;
+}
+
+.names .navbar__logo{
+    max-width: 70px;
+}
+
+.names h1{
+    font-size: 30px;
+    margin-top: -5px;
+}
+
+.navbar__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__list a{
+    color: grey;
+    cursor: pointer;
+}
+
+.navbar__list{
+    display: flex;
+    gap: 50px;
+    font-size: 20px;
+}
+
+ul {
+    margin: 0;
+    padding-right: 130px;
+    list-style: none
+}
