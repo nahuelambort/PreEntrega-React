@@ -10,3 +10,44 @@
   width: 100%;
 }
 
+.detail {
+  padding: 40px;
+  display: flex;
+  animation: fadeIn .5s ease-in-out forwards;
+}
+
+.detail__img {
+  width: 1000px;
+  height: 500px;
+}
+
+.detail__img img {
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10%;
+}
+
+.detail__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 50%;
+}
+
+.detail__info-title {
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.detail__info-price {
+  font-size: 2.40rem;
+  color: white;
+  font-weight: bold;
+}
+
+.detail__info-stock {
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 500;
+}

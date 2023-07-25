@@ -9,4 +9,5 @@
 .cart-widget__qty{
     position: absolute;
     top: 5px;
+    left: 25px;
 }
