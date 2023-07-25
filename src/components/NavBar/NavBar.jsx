@@ -11,7 +11,7 @@ export const NavBar = () => {
         <div className="navbar__content">
           <div className="names">
           <NavLink to="/">
-            <img className= "navbar__logo" src="../src/images/Logo.png"/><h1>Kick Kave</h1></NavLink>
+            <img className= "navbar__logo" src="/images/Logo.png"/><h1>Kick Kave</h1></NavLink>
           </div>
           <ul className="navbar__list">
             <li className="navbar__item"><NavLink to={"/category/nike"} style={({isActive}) => ({color: isActive ? "white": "grey"})}>Nike</NavLink></li>
