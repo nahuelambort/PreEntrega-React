@@ -1,8 +1,14 @@
 import {PiShoppingCartSimpleBold} from "react-icons/pi";
 import "./CartWidget.css";
+import { useCartContext } from "../../state/Cart.context";
+import { useNavigate } from "react-router-dom";
 
-export const CartWidget = () => (
-    <div className="cart-widget">
-        <PiShoppingCartSimpleBold /> <span className="cart-widget__qty">(3)</span>
-    </div>
-); 
+export const CartWidget = () => {
+    const { getCartQty } = useCartContext();
+    const navigate = useNavigate();
+    return (
+        <div className="cart-widget" onClick={() => navigate("/cart")}>
+            <PiShoppingCartSimpleBold />{getCartQty ?  <span className="cart-widget__qty">({getCartQty})</span> : null}
+        </div>
+    );
+}; 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getSneakers } from "../lib/sneakers.requests";
-import { ItemListContainer } from "../components";
+import { ItemListContainer, Loader } from "../components";
 
 export const Home = () => {
     const [products, setProducts] = useState([]);
@@ -17,8 +17,8 @@ export const Home = () => {
 
     return (
         <div>
+            {isLoading && <Loader />}
             <div className="container">
-                <h5>{isLoading ? "Cargando . . ." : "Listo"}</h5>
                 <ItemListContainer products={products}/>
             </div>
         </div>

@@ -36,3 +36,23 @@
     border-radius: 8px;
     color: white;
 }
+
+.item-count__buttons--hidden {
+    visibility: hidden;
+    height: 40px; 
+}
+
+.item-count__buttons--hidden span {
+    visibility: visible; 
+}
+
+.item-count__buttons button:disabled {
+    visibility: hidden;
+    padding: 0;
+    border: none;
+}
+
+.item-count__buttons span {
+    font-size: 20px;
+    width: 25px;
+}

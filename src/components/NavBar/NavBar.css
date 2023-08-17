@@ -1,39 +1,40 @@
-.navbar{
+.navbar {
     padding: 5px 0;
     position: relative;
 }
 
-.names .navbar__logo{
+.names .navbar__logo {
     max-width: 70px;
 }
 
-.names h1{
+.names h1 {
     font-size: 30px;
     margin-top: -5px;
+    color: grey; 
 }
 
-.navbar__content{
+.navbar__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.navbar__list a{
-    color: grey;
-    cursor: pointer;
-}
-
-.navbar__list{
+.navbar__list {
+    list-style: none;
     display: flex;
     gap: 50px;
     font-size: 20px;
+    padding: 0; 
+    margin: 0;
 }
 
-ul {
-    margin: 0;
-    padding-right: 130px;
-    list-style: none
+.navbar__item {
+    margin-right: 20px;
 }
-h1 {
+
+.navbar__item a {
+    text-decoration: none;
     color: grey;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
 }
